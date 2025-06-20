@@ -2788,7 +2788,7 @@ fieldset:disabled a.btn {
 }
 
 .btn-primary:focus, .btn-primary.focus {
-  box-shadow: 0 0 0 0.2rem rgba(249, 116, 133, 0.5);
+  box-shadow: 0 0 0 0.2rem #e3a04f
 }
 
 .btn-primary.disabled, .btn-primary:disabled {
@@ -2800,8 +2800,8 @@ fieldset:disabled a.btn {
 .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
 .show > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #f62b45;
-  border-color: #f51f3a;
+  background-color: #e3a04f;
+  border-color: #fcfcfc;
 }
 
 .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
@@ -11428,12 +11428,12 @@ pre .code {
 .navbar .brand .brand-img {
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 10%;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   -weblit-transform: translate(-50%, -50%);
-  border: 10px solid white;
+ /*  border: 10px solid white; */
   -webkit-transition: .5s !important;
   transition: .5s !important;
   -weblit-transition: .5s !important;
