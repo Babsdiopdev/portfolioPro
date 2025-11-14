@@ -11690,3 +11690,12 @@ pre .code {
   display: block;
   margin-top: 10px;
 }
+
+ #lien{
+    pointer-events: none; /* désactive le clic */
+    opacity: 0.6;         /* effet visuel de désactivation */
+    cursor: not-allowed;  /* curseur interdit */
+    text-decoration: none;
+   
+  }
+  

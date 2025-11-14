@@ -1,0 +1,28 @@
+[
+  {
+    "id": 1,
+    "title": "la cybermenace dans la société sénégalaise",
+    "author": "Admin",
+    "date": "2025-10-28",
+    "image": "../public_html/assets/imgs/blog1.jpg",
+     "file": "../blog/articles/article1.html",
+    "content": "<p>Cet article explique comment organiser son apprentissage du code...</p><p>Deuxième paragraphe de l’article...</p>"
+  
+  },
+  {
+    "id": 2,
+    "title": "Les erreurs fréquentes des développeurs débutants",
+    "author": "Admin",
+    "date": "2025-10-15",
+    "image": "../public_html/assets/imgs/blog2.jpg",
+    "content": "<p>Voici les 5 erreurs les plus courantes à éviter...</p>"
+  }, 
+  {
+    "id": 3,
+    "title": "Les erreurs fréquentes des développeurs débutants",
+    "author": "Admin",
+    "date": "2025-10-15",
+    "image": "../public_html/assets/imgs/blog2.jpg",
+    "content": "<p>Voici les 5 erreurs les plus courantes à éviter...</p>"
+  }
+]
