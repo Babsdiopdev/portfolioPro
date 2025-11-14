@@ -1,0 +1,44 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+
+
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.blog-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.blog-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.content-holder {
+  padding: 15px;
+}
+
+
+.read-more:hover {
+  text-decoration: underline;
+}
+a {
+  color: #e3a04f;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+a:hover {
+  color: #d48321;
+  text-decoration: none;
+}

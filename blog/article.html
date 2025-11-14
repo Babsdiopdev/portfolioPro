@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Article – Mon Blog</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container" id="article-content">
+    <p>Chargement...</p>
+  </div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get('id');
+
+    fetch('data/blogs.json')
+      .then(response => response.json())
+      .then(blogs => { 
+        const article = blogs.find(b => b.id == id);
+        const container = document.getElementById('article-content');
+
+        if (!article) {
+          container.innerHTML = "<p>Article introuvable.</p>";
+          return;
+        }
+
+        // Charger le fichier HTML associé à l’article
+        fetch(article.file)
+          .then(res => res.text())
+          .then(html => {
+            container.innerHTML = `
+              <div class="card">
+                <img src="${article.image}" class="card-img-top" alt="${article.title}" style="width:100%;max-height:400px;object-fit:cover;">
+                <div class="card-body">
+                  <h1 class="card-title">${article.title}</h1>
+                  <p class="card-text"><small>Par ${article.author} – ${article.date}</small></p>
+                  <div class="article-body">${html}</div>
+                </div>
+              </div>`;
+          });
+      });
+  </script>
+</body>
+</html>
